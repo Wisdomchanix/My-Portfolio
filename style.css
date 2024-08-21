@@ -102,13 +102,19 @@ body.dark-theme {
   cursor: pointer;
   border-bottom: 2px solid #92fe9d;
 }
-.dark-theme .contact_description a {
+.dark-theme .contact_description a{
   color: #92fe9d;
 }
 .dark-theme .contact_description a:hover {
   color: #4fce5b;
 }
-
+.dark-theme h3{
+ color:  #92fe9d;
+}
+.dark-theme  b {
+  color: rgb(228, 228, 228);
+  font-weight: 900;
+} 
 .dark-theme .scrollup {
   position: fixed;
   right: 1rem;
@@ -636,11 +642,43 @@ code-line:nth-child(10) {
 }
 
 /* ABOUT */
+h3{
+  color: #4fce5b;
+}
+.about_data{
+  font-size: 17px;
+}
 
-.about_description a {
-  color: var(--white-color);
+.about_description {
+  margin-bottom: 10px;
+}
+
+.about_data h3{
+  margin-bottom: 5px;
   text-decoration: underline;
 }
+
+.achievements_data{
+  margin-top: 15px;
+}
+
+.achievements_data li {
+  margin-bottom: 7px;
+}
+
+.skills_data li {
+  margin-bottom: 7px;
+}
+
+.skills_data{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+ 
+ b {
+  color: rgb(37, 37, 37);
+  font-weight: 900;
+} 
 
 /* PROJECTS */
 
@@ -837,30 +875,7 @@ code-line:nth-child(10) {
   background-color: hsl(var(--hue-color), 12%, 30%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
   body {
@@ -1064,7 +1079,7 @@ code-line:nth-child(10) {
   }
 
   /* ABOUT SECTION */
-  .about_description{
+  .about_data{
     font-size: 1.25rem;
   }
 
