@@ -109,9 +109,9 @@ themeButton.addEventListener('click', () => {
 })
 
 //DEFAULT DARK THEME
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-    document.documentElement.setAttribute('data-theme', 'dark')
+    document.body.classList.add('dark-theme')
 })
 
 

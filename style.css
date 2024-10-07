@@ -166,6 +166,12 @@ body.dark-theme {
   color: rgb(0, 0, 0);
   margin-top: 25px;
   cursor: pointer;
+  border: 1px solid black ;
+}
+
+.dark-theme .about_btn a{
+  color: #000000;
+  font-weight: bold;
 }
 
 .dark-theme .name {
@@ -177,6 +183,7 @@ body.dark-theme {
   background-color: #b6b6b6;
   color: #000000;
   border: 1px solid black;
+  font-weight: bold;
 }
 
 .dark-theme .connect_bg {
@@ -289,6 +296,75 @@ body {
   font-weight: bolder;
   font-family: "Michroma", sans-serif;
 }
+
+@media screen and (min-width: 380px){
+  .loading_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+  }
+  
+  
+  #svg {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .name_container {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .logo_name {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-family: "Michroma", sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  
+  .logo_name {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-family: "Michroma", sans-serif;
+  }
+
+} 
+
 
 h1,
 h2,
@@ -772,6 +848,10 @@ h3 {
   margin-top: 30px;
 }
 
+.about_btn a{
+  color: #ffffff;
+}
+
 .view_resume,
 .resume_bg-btn {
   width: 170px;
@@ -798,6 +878,9 @@ h3 {
   color: white;
 }
 
+.connect, .view_resume{
+  font-weight: bold;
+}
 
 
 .achievements_data {

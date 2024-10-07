@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 
 <body>
@@ -166,9 +167,11 @@
                         </div>
 
                         <div class="about_btn">
-                            <button class="view_resume"> View Resume
-                                <a href="https://drive.google.com/file/d/1bVWsh6J9Cn21dz7VibCWVEzHbmZ4DXTt/view?usp=drive_link" target="_blank"></a>
-                            </button>
+                            <button class="view_resume"> 
+                                <a href="https://drive.google.com/file/d/1bVWsh6J9Cn21dz7VibCWVEzHbmZ4DXTt/view?usp=drive_link"
+                                    target="_blank"> View Resume
+                                </a>
+                            </button>    
                             <div class="resume_bg-btn"></div>
                         </div>
                     </div>
@@ -187,7 +190,7 @@
 
                     <div class="project_card">
                         <div class="project_social">
-                            <i class="ri-github-fill project_icon"></i>
+                            <a href="https://github.com/Wisdomchanix"  target="_blank"><i class="ri-github-fill project_icon"></i></a>
                             <i class="ri-share-box-line project_icon"></i>
                         </div>
                         <h2 class="project_name">Social Media Management</h2>
@@ -203,20 +206,21 @@
 
                     <div class="project_card">
                         <div class="project_social">
-                            <i class="ri-github-fill project_icon"></i>
-                            <i class="ri-share-box-line project_icon"></i>
+                            <a href="https://github.com/Wisdomchanix"  target="_blank"><i class="ri-github-fill project_icon"></i></a>
+                            <a href="https://mediasurff.netlify.app/" target="_blank"><i class="ri-share-box-line project_icon"></i></a>
                         </div>
-                        <h2>Netflix Clone</h2>
+                        <h2>Media Surf</h2>
+                        <p class="about_project">Get images and videos of your choice frrom Media Surf</p>
                         <div class="project_lang">
-                            <p class="stack">Javascript </p>
-                            <p class="stack">React</p>
-                            <p class="stack">Firebase</p>
+                            <p class="stack">Pexels Api</p>
+                            <p class="stack">Tailwind</p>
+                            <p class="stack">Next.js</p>
                         </div>
                     </div>
 
                     <div class="project_card">
                         <div class="project_social">
-                            <i class="ri-github-fill project_icon"></i>
+                            <a href="https://github.com/Wisdomchanix"  target="_blank"><i class="ri-github-fill project_icon"></i></a>
                             <i class="ri-share-box-line project_icon"></i>
                         </div>
                         <h2>Boost Track</h2>
@@ -232,11 +236,13 @@
 
                     <div class="project_card">
                         <div class="project_social">
-                            <a href="www.github.com"> <i class="ri-github-fill project_icon"></i></a>
-                            <i class="ri-share-box-line project_icon"></i>
+                            <a href="https://github.com/Wisdomchanix"  target="_blank"><i class="ri-github-fill project_icon"></i></a>
+                            <a href="https://ajebomarket.com/?gad_source=1&gbraid=0AAAAADe9882NJaVphvUUoSzZBt_prBq7Y"
+                                target="_blank"> <i class="ri-share-box-line project_icon"></i> 
+                            </a>
                         </div>
-                        <h2>Trendora</h2>
-                        <p class="about_project">A Fashion E-commerce website</p>
+                        <h2>Ajebomarket</h2>
+                        <p class="about_project">A Men's Fashion E-commerce website</p>
                         <div class="project_lang">
                             <p class="stack">MongoDB</p>
                             <p class="stack">Express</p>
@@ -247,7 +253,7 @@
 
                     <div class="project_card">
                         <div class="project_social">
-                            <a href="www.github.com"> <i class="ri-github-fill project_icon"></i></a>
+                            <a href="https://github.com/Wisdomchanix"  target="_blank"><i class="ri-github-fill project_icon"></i></a>
                             <i class="ri-share-box-line project_icon"></i>
                         </div>
                         <h2>WhatsApp Clone</h2>
@@ -263,15 +269,18 @@
 
                     <div class="project_card">
                         <div class="project_social">
-                            <i class="ri-github-fill project_icon"><a href="www.github.com"></a></i>
-                            <i class="ri-share-box-line project_icon"></i>
+                            <a href="https://github.com/Wisdomchanix" target="_blank"><i class="ri-github-fill project_icon"></i></a>
+                            <a href="https://www.toadandco.com/?srsltid=AfmBOoqg3eIzRLXT9EkHLqPi4h5tRU-dx3g1iO7E9rqRxEZmnb0swSDk"
+                                target="_blank"> <i class="ri-share-box-line project_icon"></i>
+                            </a>
                         </div>
-                        <h2>E-commerce Website</h2>
+                        <h2>Toad&Co</h2>
+                        <p class="about_project">Fashion E-commerce Website</p>
                         <div class="project_lang">
-                            <p class="stack">Javascript </p>
+                            <p class="stack">Node.js</p>
                             <p class="stack">Next.js </p>
                             <p class="stack">React</p>
-                            <p class="stack">Css</p>
+                            <p class="stack">MongoDB</p>
                         </div>
                     </div>
                 </div>
@@ -345,15 +354,18 @@
 
                 <form action="send-emial.js" class="contact_form" id="contact-form">
                     <textarea name="#" id="name" class="name" placeholder="Enter your name" required></textarea>
-                    <textarea name="#" id="mail" class="name mail" placeholder="Enter your mail"></textarea>
+                    <!-- <textarea name="#"  id="mail" class="name mail" placeholder="Enter your mail" ></textarea> -->
+                    <input type="email" pattern="[a-z0-9._%+-] + @[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Enter your mail" id="mail" class="name mail">
                     <textarea name="#" id="message" class="name message" placeholder="Message"></textarea>
+                  
+                    
 
                     <div class="connect_btn">
                         <button type="submit" class="connect">CONNECT</button>
                         <div class="connect_bg"></div>
                     </div>
                 </form>
-
+          
                 <p class="response_message" id="response-message"></p>
 
             </section>
@@ -381,7 +393,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
+        </script>
     <script src="./scrollanimation.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
