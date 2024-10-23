@@ -190,6 +190,28 @@ body.dark-theme {
   border: 2px solid #b6b6b6;
 }
 
+.dark-theme .sneaker{
+  color: var(--text-color);
+  background-color: var(--text-color);
+  /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+  color: #575757;
+}
+
+.dark-theme .back_btn{
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+}
+
+.dark-theme .back_btn:hover{
+  color: #929292;
+}
+
+.dark-theme .button_light{
+  color: #0f2027;
+}
+
 
 /* buttonns for dark moede */
 .nav__dark {
@@ -1101,6 +1123,73 @@ b {
   color: var(--text-color);
 }
 
+/* OTHER WORK PAGE */
+
+.featured_container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.sneaker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; 
+  background-color: var(--text-color);
+  border-radius: .5rem;
+  transition: .3s;
+  margin-top: 60px;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+.sneaker:hover{
+  transform: scaleX(1.1);
+}
+
+.burger{
+  margin-bottom: 30px;
+}
+
+.sneaker_img {
+  width: 220px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 12px 8px rgba(0, 0, 0.2));
+  transform: var(--rotate-img);
+}
+
+.sneaker_name{
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.button_light{
+  color: white;
+  font-weight: 700;
+}
+
+.button_light:hover{
+  text-decoration: underline;
+}
+
+.back_btn{
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  display: block;
+}
+
+.back_btn:hover{
+  color: #464646;
+}
+
 /* CONTACT ME */
 
 .contact_description a {
@@ -1324,6 +1413,12 @@ b {
   }
 
 }
+
+/* @media screen and (min-width: 550px) {
+  .featured_container{
+    width: 50%;
+  }
+} */
 
 
 @media screen and (min-width: 768px) {
@@ -1630,11 +1725,21 @@ b {
 
   /* MORE WORK */
 
-  .work_container {
+  .work_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /* padding: 20px; */
+  }
+
+  .featured_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .sneaker{
+    padding: 1.5rem;
   }
 
   /* CONTACT */
@@ -1879,6 +1984,18 @@ b {
     color: rgb(255, 255, 255);
     margin-top: 25px;
     cursor: pointer;
+  }
+
+  /* MORE WORK */
+
+  .featured_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .sneaker{
+    padding: 2rem;
   }
 
 
