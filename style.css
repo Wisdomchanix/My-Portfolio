@@ -861,6 +861,15 @@ h3 {
   color: #000000;
 }
 
+.certificate {
+  width: 220px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* filter: drop-shadow(0 12px 8px rgba(0, 0, 0.2)); */
+  transform: var(--rotate-img);
+  text-align: center;
+}
+
 .about_btn {
   position: relative;
   display: flex;
@@ -878,7 +887,7 @@ h3 {
 .resume_bg-btn {
   width: 170px;
   padding: 0.8em;
-  display: inline-block;
+  /* display: inline-block; */
   transition: .3s;
 }
 
@@ -1200,6 +1209,13 @@ b {
   color: #00a811;
 }
 
+.contact_form{
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  
+}
+
 .name {
   outline: none;
   border: none;
@@ -1235,7 +1251,7 @@ b {
 
 .connect,
 .connect_bg {
-  width: 80%;
+  width: 200px;
   padding: 0.8em;
   display: inline-block;
   transition: .3s;
@@ -1249,7 +1265,7 @@ b {
 
 .connect {
   position: absolute;
-  left: 3.5rem;
+  left: 6.5rem;
   top: -1rem;
   background-color: #000000;
   color: rgb(255, 255, 255);
@@ -1262,19 +1278,6 @@ b {
   margin-top: 10px;
   color: #00a811;
 }
-
-
-
-/* 
-.project_card:hover {
-  transform: var(--img-scale);
-} */
-
-
-
-
-
-
 
 
 .scrollup {
@@ -1327,7 +1330,7 @@ b {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 410px) {
+ @media screen and (min-width: 410px) {
 
   .view_resume,
   .resume_bg-btn {
@@ -1345,7 +1348,7 @@ b {
 
   .view_resume {
     position: absolute;
-    left: 30%;
+    left: 37%;
     top: -0.8rem;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -1367,9 +1370,9 @@ b {
     margin-top: 20px;
   }
 
-  .dark-theme.view_resume {
+  .dark-theme .view_resume {
     position: absolute;
-    left: 30%;
+    left: 37%;
     top: -0.8rem;
     background-color: #b6b6b6;
     color: rgb(0, 0, 0);
@@ -1378,19 +1381,18 @@ b {
   }
 
 
-
-  .connect_btn {
+   .connect_btn {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
-  }
+  } 
 
-  .connect,
+   .connect,
   .connect_bg {
-    width: 60%;
+    width: 220px;
     padding: 0.8em;
     display: inline-block;
     transition: .3s;
@@ -1404,15 +1406,16 @@ b {
 
   .connect {
     position: absolute;
-    left: 15%;
+    left: 37%;
     top: -1rem;
     background-color: #000000;
     color: rgb(255, 255, 255);
     margin-top: 25px;
     cursor: pointer;
-  }
-
+  }  
 }
+ 
+/* }  
 
 /* @media screen and (min-width: 550px) {
   .featured_container{
@@ -1630,11 +1633,20 @@ b {
 
   .about_btn {
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 30px; */
+  }
+
+  .certificate {
+    width: 320px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* filter: drop-shadow(0 12px 8px rgba(0, 0, 0.2)); */
+    transform: var(--rotate-img);
+    text-align: center;
   }
 
   .view_resume,
@@ -1756,11 +1768,12 @@ b {
     justify-content: center;
     margin: 0 auto;
     margin-top: 30px;
+    
   }
 
   .connect,
   .connect_bg {
-    width: 500px;
+    width: 280px;
     padding: 0.8em;
     display: inline-block;
     transition: .3s;
@@ -1774,7 +1787,7 @@ b {
 
   .connect{
     position: absolute;
-    left: 15%;
+    left: 40%;
     top: -1rem;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -1964,7 +1977,7 @@ b {
 
   .connect,
   .connect_bg {
-    width: 500px;
+    width: 300px;
     padding: 0.8em;
     display: inline-block;
     transition: .3s;
@@ -1978,7 +1991,7 @@ b {
 
   .connect {
     position: absolute;
-    left: 20rem;
+    left: 40%;
     top: -1rem;
     background-color: #000000;
     color: rgb(255, 255, 255);
@@ -2019,7 +2032,7 @@ b {
     height: 640px;
   } */
 
-  .connect,
+  /* .connect,
   .connect_bg {
     width: 500px;
     padding: 0.8em;
@@ -2041,5 +2054,5 @@ b {
     color: rgb(255, 255, 255);
     margin-top: 25px;
     cursor: pointer;
-  }
+  } */
 }
